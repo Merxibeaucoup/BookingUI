@@ -1,0 +1,42 @@
+.header {
+  background-color: #003580;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    margin: 2rem 0 10rem 0;
+  }
+
+  &__list {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 5rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__desc {
+    margin: 2rem 0;
+  }
+
+  &__btn {
+    background-color: #003580;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+}
+
+// move to utils after
+.active {
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+}
