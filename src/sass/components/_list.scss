@@ -1,0 +1,91 @@
+.list {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 102.4rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__search {
+    flex: 1;
+    background-color: #febb02;
+    padding: 1rem;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 1rem;
+    }
+
+    &__item > label {
+      font-size: 1.2rem;
+    }
+
+    &__item > input {
+      height: 3rem;
+      border: none;
+      padding: 0.5rem;
+    }
+    &__item > span {
+      height: 3rem;
+      padding: 0.5rem;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__title {
+      font-size: 2rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    & > button {
+      padding: 10px;
+      background-color: #0071c2;
+      color: #fff;
+      border: none;
+      width: 100%;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  &__result {
+    flex: 3;
+  }
+
+  &__option {
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    &__item > input {
+      height: 3rem;
+      width: 5rem;
+    }
+  }
+}
+
+//move to utils after
+.lsOptions {
+  padding: 1rem;
+}
